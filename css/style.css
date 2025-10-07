@@ -1,46 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 /*RESET*/
 
 body {
-    font-family: "Roboto", sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 /*NAV START*/
 .nav {
-    background-color: black;
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 0.625rem;
-    
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 0.625rem;
 }
 
-.nav-list a{
-    padding: 1.25rem;
-    text-decoration: none;
-    color: #A4A4A4;
-    transition: 300ms ease-in-out;
+.nav-list a {
+  padding: 1.25rem;
+  text-decoration: none;
+  color: #a4a4a4;
+  transition: 300ms ease-in-out;
 }
 
 .nav-list a:hover {
-    color: #fff;
+  color: #fff;
 }
 /*NAV END*/
 /*MAIN START*/
 .main {
-    width: 100%;
-    background-color: #fff;
-    height: calc(100vh - 5rem);
+  width: 100%;
+  background-color: #fff;
+  height: calc(100vh - 5rem);
+  display: flex;
+  background-image: url("../img/programador.png");
+  align-items: center;
+  padding-left: 10%;
+}
+
+.main h1 {
+  color: #fff;
+  font-size: 26px;
+}
+.main p {
+  font-size: 26px;
+  font-style: italic;
+  color: #1e96fc;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.call-to-action {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  padding: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.9s;
+}
+
+.call-to-action:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.about div {
+  max-width: 50%;
+  padding-right: 40px;
+}
+.about img {
+  max-width: 450px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+/*FIM SOBRE*/
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
 }
